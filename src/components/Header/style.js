@@ -57,23 +57,62 @@ export const WhatsappImage = styled.img`
 `
 
 
-export const LinkpDesktop = styled.a`
-font-size: 1.4rem;
-`
+
 export const ListNav = styled.ul`
   display: flex;
    gap: 70px;
 list-style-type: none;
+a {
+     display: flex;
+  font-weight: 600;
+  cursor: pointer;
+  color: #646464;
+transition: color 0.3s ease, opacity 0.3s ease;
+   text-decoration: none;  /* PARA REMOVER A LINHA DO LINK ("a")*/
+ &:hover{
+      color: rgb(22, 69, 126);
+   }
+
+}
 `
 
 export const NavListDesktop = styled.nav`
   display: flex;
   align-items: baseline;
 gap: 70px;
+@media (max-width: 1024px) {
+  display: none;
+}
 `
-
-
-
+export const LinkpDesktop = styled.div`
+font-size: 1.4rem;
+`
 export const OrcamentoA = styled.a`
+text-decoration: none;  
+background-color: rgb(22, 69, 126);
+border: none;
+border-radius: 10px;
+font-weight: 600;
+font-size: 25px;
+ color: #ffffff;
+  cursor: pointer;
+margin-right: 9.7rem;
+height: 50px;
+width: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+&:hover{
+  opacity: 0.8;
+}
+&:active{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
 `
+
+
+
+
 
