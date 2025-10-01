@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MobileMenu = styled.div`
-
+z-index: 1001;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,11 +11,10 @@ export const MobileMenu = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 1.8rem;
-  z-index: 5;
-   display: ${({ open }) => (open ? "flex" : "none")};   // <- Aqui!
-  @media (min-width: 1025px) {
-    display: none;  // Esconde no desktop
-}
+
+display: ${({ open }) => (open ? "flex" : "none")};
+
+
 `
 export const NavLinksMobile = styled.ul` display: flex;
   flex-direction: column;
@@ -25,9 +24,8 @@ export const NavLinksMobile = styled.ul` display: flex;
   list-style: none;
   padding: 0;
 
-  li{  border-bottom: 1px solid #787272;
+  li{  border-bottom: 1px solid #535050ff;
   padding-bottom: 1rem;
-  
   }
 
   a{  font-weight: 600;
@@ -39,17 +37,23 @@ export const NavLinksMobile = styled.ul` display: flex;
 `
 
 export const HamburgerButton = styled.button`
- font-size: 24px;
+ font-size: 30px;
   background: none;
   border: none;
   color: #000000;
   cursor: pointer;
-  
-   display: none;
+   z-index: 1002;
+  position: fixed;
+  right: 0;
+  margin-top: 40px;
+  margin-right: 20px;
+  display:none;
   @media (max-width: 1024px) {
     display: ${({ open }) => (open ? "none" : "flex")};
+  }
+   
   
-}
+
   `
 
   export const CloseButton = styled.button`
@@ -58,10 +62,10 @@ export const HamburgerButton = styled.button`
   border: none;
   color: #000000;
   cursor: pointer;
-  display: none;
+  
     margin-top: 20px;
   margin-right: 20px;
-  
+   display: block;
   align-self: end;
   color: #ffffff;`
 

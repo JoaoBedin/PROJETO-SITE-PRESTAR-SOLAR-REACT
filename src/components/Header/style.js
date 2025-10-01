@@ -35,6 +35,16 @@ height: 120px;
  margin-left: 120px;
  cursor: pointer;
  
+ 
+  
+  @media (max-width: 1024px) {
+      height: 60%;
+  width: 75%;
+  display: flex;
+  align-content: flex-start;
+  margin-left: -10px;
+  
+  }
 `
 
 export const WhatsappImage = styled.img`
@@ -48,11 +58,20 @@ export const WhatsappImage = styled.img`
   cursor: pointer;
 
 
-&hover{
+&:hover{
   opacity: 0.5;
     transform: scale(1.1);
 
 }
+@media (max-width: 1024px) {
+   height: 60px;
+position: fixed;
+right: 0;
+bottom: 0;
+margin: 10px;
+opacity: 0.7;
+}
+
 
 `
 

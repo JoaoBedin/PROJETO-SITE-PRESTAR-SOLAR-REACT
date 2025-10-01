@@ -1,24 +1,18 @@
-import React, {useState } from "react";
-
-import { MobileMenu,NavLinksMobile, HamburgerButton, CloseButton } from "./style.js";
-
+import React ,{ useState } from "react";
+import { MobileMenu, NavLinksMobile, HamburgerButton, CloseButton } from "./style.js";
 
 function MobileMenuHeader() {
     const [open, setOpen] = useState(false);
 
-return(
-<>
-  <HamburgerButton open={open}  onClick={() => setOpen(true)}>   
+  return (
+  <>
+  <HamburgerButton open={open} onClick={() => setOpen(true)}>
         <i className="fas fa-bars"></i>
-</HamburgerButton>
-   
-     
+      </HamburgerButton>
 
-      <MobileMenu 
-      open={open}>
-        <CloseButton
-          onClick={() => setOpen(false)} >
-          <i className="fas fa-times"></i>
+     <MobileMenu open={open}>
+        <CloseButton onClick={() => setOpen(false)}>
+             <i className="fas fa-times"></i>
         </CloseButton>
         <NavLinksMobile>
           <li>
@@ -41,17 +35,8 @@ return(
           </li>
         </NavLinksMobile>
       </MobileMenu>
-
-
-
 </>
-
-
-
-
-
-
-)
+  );
 }
 
-export default MobileMenuHeader
+export default MobileMenuHeader;

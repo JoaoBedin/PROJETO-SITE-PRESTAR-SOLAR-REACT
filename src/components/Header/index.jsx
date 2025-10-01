@@ -7,6 +7,7 @@ import {
   ListNav,
   LinkpDesktop,
   OrcamentoA,
+  WhatsappImage,
 } from "./style.js";
 
 function Header() {
@@ -33,12 +34,13 @@ function Header() {
           </NavListDesktop>
         </LinkpDesktop>
 
-
+  
 
 
 
         
       </LinkAll>
+      <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><WhatsappImage src="src/assets/whatsapp.png" alt="whatsapp-image" /></a>
     </WhiteBar>
   );
 }
