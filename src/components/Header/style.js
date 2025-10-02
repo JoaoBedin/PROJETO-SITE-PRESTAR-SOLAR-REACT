@@ -11,7 +11,7 @@ width: 100%;
 `
 
 export const WhiteBar = styled.div`
-      height:115px; 
+      height:100px; 
         background-color: rgb(255, 255, 255); 
 
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,15 @@ height: 120px;
  margin-left: 120px;
  cursor: pointer;
  
+ @media (max-width: 1400px) {
  
+  display: flex;
+  align-content: flex-start;
+  margin-left: -10px;
+  padding-right: 40px;
+  }
+
+
   
   @media (max-width: 1024px) {
       height: 60%;
@@ -115,7 +123,7 @@ font-weight: 600;
 font-size: 25px;
  color: #ffffff;
   cursor: pointer;
-margin-right: 9.7rem;
+margin-right: 12.3rem;
 height: 50px;
 width: 200px;
 display: flex;
