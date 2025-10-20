@@ -14,6 +14,11 @@ z-index: 1001;
 
 display: ${({ open }) => (open ? "flex" : "none")};
 
+@media (max-width: 1024px) {
+
+   font-size: 1.5rem;
+
+}
 
 `
 export const NavLinksMobile = styled.ul` display: flex;

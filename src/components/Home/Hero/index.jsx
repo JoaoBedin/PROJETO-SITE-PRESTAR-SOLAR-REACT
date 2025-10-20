@@ -33,7 +33,7 @@ return (
 
 </div>
 
-<ImageMulherPrestar src="src/assets/BANNER1Prancheta-1.png" class="img-mulher-prestar"/>   
+<ImageMulherPrestar src="src/assets/BANNER1Prancheta-1.png" className='img-mulher-prestar'/>   
 </ ImgText>
 
 

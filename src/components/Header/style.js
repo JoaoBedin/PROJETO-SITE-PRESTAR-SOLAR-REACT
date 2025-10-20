@@ -25,6 +25,9 @@ align-items: center;
 text-align: end;
 @media (max-width: 1024px) {
   height: 100px;
+   margin-right: 0; /* 👈 remove no mobile */
+    
+    justify-content: center;
 }
 `
 
@@ -50,7 +53,8 @@ height: 120px;
   width: 75%;
   display: flex;
   align-content: flex-start;
-  margin-left: -10px;
+  margin: 0;
+  padding:0;
   
   }
 `
@@ -74,9 +78,8 @@ export const WhatsappImage = styled.img`
 @media (max-width: 1024px) {
    height: 60px;
 position: fixed;
-right: 0;
 bottom: 0;
-margin: 10px;
+right: 0;
 opacity: 0.7;
 }
 

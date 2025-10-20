@@ -36,6 +36,31 @@ export const ImageBackground = styled.div`
     background-color: rgba(0, 0, 0, 0.2); /* ← transparência mantida */
     z-index: 1;
   }
+
+@media (max-width: 1024px) {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+height: 800px;
+  padding: 0;
+margin: 0;
+
+  
+> * {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+
+}
+
+  }
+
 `
 
 
@@ -47,6 +72,11 @@ border-radius: 60px;
 max-height: 550px;
 height: 100%;
 
+@media (max-width: 1024px) {
+
+display:none
+
+}
 `
 
 
@@ -59,6 +89,12 @@ export const ImgText = styled.div`
 export const H1PInit = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1024px) {
+font-size: 1rem;
+text-align: center;
+
+  }
 `
 
 export const TitleInit = styled.h1`
@@ -70,10 +106,33 @@ max-width: 700px;
 width: 100%;
 
  `
-export const TextInit = styled.p`
+export const TextInit = styled.div`
 
  margin-top: 5%;
 margin-left: 15%;
+
+@media (max-width: 1024px) {
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+ margin: 0;
+
+  p{
+      font-size: 1rem;
+  }
+
+  strong{
+     font-size: 1rem;
+  }
+
+  h1{
+font-size: 1.8rem;
+}
+
+}
 
 `
 
@@ -108,6 +167,12 @@ text-align: center;
 display: flex;
 margin-top: 20px;
 
+@media (max-width: 1024px) {
+margin: 0 auto;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 `
 
 export const SeloRaio = styled.img`
@@ -135,6 +200,14 @@ export const GarantiaSelos = styled.div`
 display: flex;
 align-items: center;
   }
+@media (max-width: 1024px) {
+   display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 0;
+  justify-content: center;
+ 
+}
 `
 
 export const PgarantiaStrong = styled.p`
@@ -143,7 +216,14 @@ export const PgarantiaStrong = styled.p`
 export const Pgarantia = styled.p`
 font-size: 22px;
 strong{font-weight: 600;
-  font-size: 22px;}
+  font-size: 22px;
+   @media (max-width: 1024px) {
+     font-size: 1rem;
+    }
+}
+
+ 
+  
 `
    
    
@@ -186,6 +266,30 @@ export const ElementStoryAboutPrestar = styled.div`
     b{
          font-weight: bold; 
     }
+
+
+       @media (max-width: 1024px) {
+       position: relative;
+  gap: 1rem;
+  width: 75%;
+margin-top: -175px;
+
+ display: flex;
+
+
+  p{
+    font-size: 1rem;
+  }
+
+  strong{
+    font-size: 1.5rem;
+  
+   
+  }
+     
+     
+     
+     }
 `
 
 
