@@ -19,7 +19,7 @@ function Footer() {
 <ElementFooter>
 
 <ImgPelementsFooter>
-<a href="#inicio">  <BlueLogoFooter src={BlueLogo} alt="logo-azul" /></a>
+<a href="/">  <BlueLogoFooter src={BlueLogo} alt="logo-azul" /></a>
 <p>Atendemos os estados do sul do Brasil, oferecendo soluções em energia solar com qualidade e um atendimento personalizado, focado nas necessidades específicas de cada cliente e unidade consumidora.</p>
 
 <ImgSocialMedia>

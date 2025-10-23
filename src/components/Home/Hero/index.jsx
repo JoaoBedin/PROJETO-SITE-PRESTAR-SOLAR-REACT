@@ -6,6 +6,8 @@ import {ImageBackground, ImageMulherPrestar, ImgText, H1PInit, TitleInit, TextIn
 
  import {motion} from 'framer-motion' 
 import MulherPrestar from "../../../assets/BANNER1Prancheta-1.png";
+import ImgSeloRaio from "../../../assets/Raio-png.png";
+import ImgSeloCertificado from "../../../assets/verificad-log.png";
 
 function Hero() {
 
@@ -48,11 +50,11 @@ transition={{duration: 1}}
 
 <GarantiaSelos>
 <div>
-<SeloGarantia src="src/assets/verificad-log.png" alt="selo-de-garantia"/>
+<SeloGarantia src={ImgSeloCertificado} alt="selo-de-garantia"/>
 <Pgarantia> <strong>Garantia</strong> de Qualidade</Pgarantia>
 </div>
 <div>
-<SeloRaio src="src/assets/Raio-png.png" alt="raio-de-garantia"/>
+<SeloRaio src={ImgSeloRaio} alt="raio-de-garantia"/>
 <Pgarantia> <strong>25 anos</strong> de Garantia com Eficiência</Pgarantia>
 </div>
 </GarantiaSelos>

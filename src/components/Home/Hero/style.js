@@ -1,10 +1,10 @@
 import styled from "styled-components";
-
+import Img from "../../../assets/prancheta-1-copia-6.png";
 
 
 export const ImageBackground = styled.div`
   position: relative;                /* <- ESSENCIAL para o ::before funcionar */
-  background-image: url("src/assets/prancheta-1-copia-6.png");
+  background-image: url(${Img});
   background-position: center;
   background-size: cover; 
   border-radius: 40px;
