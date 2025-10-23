@@ -1,18 +1,16 @@
  
 import Header from "../../components/Header";
 import MobileMenuHeader from '../../components/MobileMenuHeader';
-
+import Hero from "../../components/Projects/Hero";
+import Footer from '../../components/Footer';
  function Projects() {
   return (
     <>
   <MobileMenuHeader/>
-<Header> 
+<Header /> 
+<Hero />
+<Footer />
 
-</Header>
-
-    <div>
-      <h1>Projetos</h1>
-    </div>
     </>
   )
 }       

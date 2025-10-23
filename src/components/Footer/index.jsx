@@ -1,6 +1,6 @@
 import {ElementFooter,ImgPelementsFooter,ImgSocialMedia, BlueLogoFooter,  ContactElementFooter, LinkElementFooter,  FooterCopy, LineFooter} from "./style.js"
 
-import {} from "../../assets/LOGO PRESTAR SOLAR.png"
+
 function Footer() {
     return(
         <>

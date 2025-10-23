@@ -4,12 +4,19 @@ import {ImageBackground, ImageMulherPrestar, ImgText, H1PInit, TitleInit, TextIn
     SeloRaio, SeloGarantia, Pgarantia, GarantiaSelos, 
  } from './style.js';
 
+ import {motion} from 'framer-motion' 
+
+
 function Hero() {
 
 return (
 
 <>
-
+<motion.div
+initial={{opacity: 0, translateX: "-100%"}}
+whileInView={{opacity: 1, translateX: 0}}
+transition={{duration: 1}}  
+>
 <ImageBackground>
 
     
@@ -24,7 +31,7 @@ return (
   <H1PInit>
   <TitleInit>Reduza sua conta de energia em até 95% com energia solar!</TitleInit>  
 <Pmain>Economia e Sustentabilidade; com a energia solar você economiza mais e contribui com o meio ambiente.</Pmain>
- < AOrcamentoInit href="./#orcamento" >Solite seu Orçamento! </ AOrcamentoInit>
+ < AOrcamentoInit href="./#orcamento" >Solicite seu Orçamento! </ AOrcamentoInit>
 </H1PInit>
  <div >
 
@@ -55,7 +62,7 @@ return (
 </TextInit>
 
 </ImageBackground>
-
+</motion.div>
 
 
 

@@ -5,12 +5,16 @@ function MobileMenuHeader() {
     const [open, setOpen] = useState(false);
 
   return (
-  <>
-  <HamburgerButton open={open} onClick={() => setOpen(true)}>
+  <section>
+ <HamburgerButton open={open} onClick={() => setOpen(true)}>
         <i className="fas fa-bars"></i>
       </HamburgerButton>
 
      <MobileMenu open={open}>
+
+
+ 
+
         <CloseButton onClick={() => setOpen(false)}>
              <i className="fas fa-times"></i>
         </CloseButton>
@@ -35,7 +39,7 @@ function MobileMenuHeader() {
           </li>
         </NavLinksMobile>
       </MobileMenu>
-</>
+</section>
   );
 }
 

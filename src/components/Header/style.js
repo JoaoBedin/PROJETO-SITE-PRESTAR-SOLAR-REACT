@@ -24,8 +24,8 @@ display: flex;
 align-items: center;
 text-align: end;
 @media (max-width: 1024px) {
-  height: 100px;
-   margin-right: 0; /* 👈 remove no mobile */
+  height: 80px;
+   margin-right: 0; 
     
     justify-content: center;
 }
@@ -50,7 +50,7 @@ height: 120px;
   
   @media (max-width: 1024px) {
       height: 60%;
-  width: 75%;
+  width: 55%;
   display: flex;
   align-content: flex-start;
   margin: 0;
@@ -80,7 +80,7 @@ export const WhatsappImage = styled.img`
 position: fixed;
 bottom: 0;
 right: 0;
-opacity: 0.7;
+opacity: 0.9;
 }
 
 
@@ -110,7 +110,7 @@ export const NavListDesktop = styled.nav`
   display: flex;
   align-items: baseline;
 gap: 70px;
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   display: none;
 }
 `

@@ -50,11 +50,12 @@ export const HamburgerButton = styled.button`
    z-index: 1002;
   position: fixed;
   right: 0;
-  margin-top: 40px;
+ top: 40px;
   margin-right: 20px;
-  display:none;
-  @media (max-width: 1024px) {
+  display: none;
+  @media (max-width: 1120px) {
     display: ${({ open }) => (open ? "none" : "flex")};
+  
   }
    
   
@@ -72,7 +73,9 @@ export const HamburgerButton = styled.button`
   margin-right: 20px;
    display: block;
   align-self: end;
-  color: #ffffff;`
+  color: #ffffff;
+  
+  `
 
 
 

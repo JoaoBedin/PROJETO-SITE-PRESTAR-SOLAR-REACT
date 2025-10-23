@@ -16,9 +16,8 @@ import Footer from '../../components/Footer';
 function Home() {
   return (
     <>
-    
-<MobileMenuHeader />
-<Header /> 
+ <MobileMenuHeader />
+ <Header />
 <Hero />
 <Numbers />
 <Convence />

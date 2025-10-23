@@ -105,7 +105,14 @@ export const TitleInit = styled.h1`
 max-width: 700px;
 width: 100%;
 
- `
+
+
+@media (max-width: 1500px) {
+  
+  width: 100%;
+font-size: 3rem;
+}
+  `
 export const TextInit = styled.div`
 
  margin-top: 5%;
@@ -268,6 +275,16 @@ export const ElementStoryAboutPrestar = styled.div`
     }
 
 
+  @media (max-width: 1410px) {
+     position: relative;
+margin-top: -200px;
+width: 60%;
+
+
+
+     }
+
+
        @media (max-width: 1024px) {
        position: relative;
   gap: 1rem;
@@ -287,10 +304,11 @@ margin-top: -175px;
    
   }
      
-     
-     
-     }
+}
+
+
 `
+
 
 
 

@@ -10,9 +10,15 @@ import {
   WhatsappImage,
 } from "./style.js";
 
+
+
 function Header() {
   return (
-    <WhiteBar>
+
+
+    <WhiteBar 
+  
+    >
       <a href="/">
         <BlueLogo src="src/assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" />
       </a>
@@ -30,7 +36,7 @@ function Header() {
                 </a>
               </li>
             </ListNav>
-            <OrcamentoA href="#orcamento">Orçamento</OrcamentoA>
+            <OrcamentoA href="#orcamento"> Orçamento </OrcamentoA>
           </NavListDesktop>
         </LinkpDesktop>
 
