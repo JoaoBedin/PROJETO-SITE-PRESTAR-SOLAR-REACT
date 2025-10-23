@@ -1,5 +1,6 @@
 
 import {ImgHomem, BlueBarAboutUs, TextAboutUs, ItensAboutUs } from "./style.js"
+import banner from "../../../assets/BANNER.png"
 
 
 function Hero() {
@@ -19,7 +20,7 @@ return (
 <ItensAboutUs>
 
 
-<ImgHomem  src="src/assets/BANNER.png" alt="" />
+<ImgHomem src={banner} />
 
 <TextAboutUs >
 <h1> QUEM SOMOS</h1>

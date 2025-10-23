@@ -5,7 +5,7 @@ import {ImageBackground, ImageMulherPrestar, ImgText, H1PInit, TitleInit, TextIn
  } from './style.js';
 
  import {motion} from 'framer-motion' 
-
+import MulherPrestar from "../../../assets/BANNER1Prancheta-1.png";
 
 function Hero() {
 
@@ -40,7 +40,7 @@ transition={{duration: 1}}
 
 </div>
 
-<ImageMulherPrestar src="src/assets/BANNER1Prancheta-1.png" className='img-mulher-prestar'/>   
+<ImageMulherPrestar src={MulherPrestar} className='img-mulher-prestar'/>   
 </ ImgText>
 
 

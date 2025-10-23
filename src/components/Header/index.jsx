@@ -11,6 +11,8 @@ import {
 } from "./style.js";
 
 
+import BlueLogoImg from '../../assets/LOGO PRESTAR SOLAR.png';
+import WhatsappIcon from "../../assets/whatsapp.png";
 
 function Header() {
   return (
@@ -20,7 +22,7 @@ function Header() {
   
     >
       <a href="/">
-        <BlueLogo src="src/assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" />
+        <BlueLogo src={BlueLogoImg} alt="logo-azul" />
       </a>
 
       <LinkAll>
@@ -36,7 +38,7 @@ function Header() {
                 </a>
               </li>
             </ListNav>
-            <OrcamentoA href="#orcamento"> Orçamento </OrcamentoA>
+            <OrcamentoA href="/ "> Orçamento </OrcamentoA>
           </NavListDesktop>
         </LinkpDesktop>
 
@@ -46,7 +48,7 @@ function Header() {
 
         
       </LinkAll>
-      <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><WhatsappImage src="src/assets/whatsapp.png" alt="whatsapp-image" /></a>
+      <a href="https://wa.me/46999115033?text=Olá, Gostaria de solicitar um orçamento!" target="_blank"><WhatsappImage src={WhatsappIcon} alt="whatsapp-image" /></a>
     </WhiteBar>
   );
 }

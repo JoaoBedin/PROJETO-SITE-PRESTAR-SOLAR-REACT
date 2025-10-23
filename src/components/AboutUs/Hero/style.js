@@ -49,6 +49,8 @@ export const ImgHomem = styled.img`max-height: 500px; height: 100%; border-radiu
 @media (max-width: 1300px) {
       display: none;
   height: 200px;
+
+  
 }`
 
 export const TextAboutUs = styled.div`

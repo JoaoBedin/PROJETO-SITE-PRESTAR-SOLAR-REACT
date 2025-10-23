@@ -1,5 +1,9 @@
 import {ElementFooter,ImgPelementsFooter,ImgSocialMedia, BlueLogoFooter,  ContactElementFooter, LinkElementFooter,  FooterCopy, LineFooter} from "./style.js"
 
+import FacebookIcon from '../../assets/icons8-facebook-48.png';
+import InstagramIcon from '../../assets/icons8-instagram-48.png';
+import BlueLogo from '../../assets/LOGO PRESTAR SOLAR.png';
+
 
 function Footer() {
     return(
@@ -15,12 +19,12 @@ function Footer() {
 <ElementFooter>
 
 <ImgPelementsFooter>
-<a href="#inicio">  <BlueLogoFooter src="src/assets/LOGO PRESTAR SOLAR.png" alt="logo-azul" /></a>
+<a href="#inicio">  <BlueLogoFooter src={BlueLogo} alt="logo-azul" /></a>
 <p>Atendemos os estados do sul do Brasil, oferecendo soluções em energia solar com qualidade e um atendimento personalizado, focado nas necessidades específicas de cada cliente e unidade consumidora.</p>
 
 <ImgSocialMedia>
-<a href="https://www.facebook.com/solarprestar" target="_blank"><img src="src/assets/icons8-facebook-48.png" alt="facebook-logo" /></a>
-<a href="https://www.instagram.com/solarprestar/" target="_blank"><img src="src/assets/icons8-instagram-48.png" alt="instagram-logo" /></a>
+<a href="https://www.facebook.com/solarprestar" target="_blank"><img src={FacebookIcon} alt="facebook-logo" /></a>
+<a href="https://www.instagram.com/solarprestar/" target="_blank"><img src={InstagramIcon} alt="instagram-logo" /></a>
 </ImgSocialMedia>
 
 </ImgPelementsFooter>
